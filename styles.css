@@ -1,6 +1,6 @@
 /* ================================================
    HENDERSON COUNTRY CLUB — TEMPLATE STYLESHEET
-   Aesthetic: Old Money / Estate Golf / Editorial
+   Aesthetic: Estate Golf / Editorial
    ================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
@@ -280,6 +280,17 @@ header::after  { bottom: 60px; right: 12px; border-left: none; border-top: none;
   background-color: transparent;
 }
 
+.hero-image-container img,
+.hero-image-container .img-placeholder img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.hero-image-container .img-placeholder span {
+  display: none;
+}
+
 .home-btn {
   position: absolute;
   inset: 0;
@@ -471,6 +482,13 @@ header::after  { bottom: 60px; right: 12px; border-left: none; border-top: none;
   height: 100%;
 }
 
+.hero-band img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 70%;
+}
+
 .hero-band-overlay {
   position: absolute;
   inset: 0;
@@ -542,6 +560,13 @@ header::after  { bottom: 60px; right: 12px; border-left: none; border-top: none;
 .welcome-image-wrap .img-placeholder {
   width: 100%;
   height: 100%;
+}
+
+.welcome-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .welcome-cta {
